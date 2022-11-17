@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>App</title>
+  </head>
+  <body>
+    
+
+    <h2><%= randomhonap %></h2>
+    <p>A számnak megfelelő hónap: 
+      
+      <% switch (randomhonap) {
+        case 1 : %>
+                Január
+                <% break;
+        
+        case 2 : %>
+                Február
+                <% break;
+        
+        case 3 : %>
+                Március
+                <% break;
+
+        case 4 : %>
+                Április
+                <% break;
+                
+        case 5 : %>
+                Május
+                <% break;
+                
+        case 6 : %>
+                Június
+                <% break;
+                
+        case 7 : %>
+                Július
+                <% break;
+                
+        case 8 : %>
+                Augusztus
+                <% break;
+                
+        case 9 : %>
+                Szeptember
+                <% break;
+                
+        case 10 : %>
+                Október
+                <% break;
+                
+        case 11 : %>
+                November
+                <% break;
+                
+        case 12 : %>
+                December
+                <% break;
+
+        case 13 : %>
+                Nincs ilyen hónap.
+                <% break;
+        
+        } %>
+
+    </p>
+    <p>
+      <%if(randomszam1>randomszam2) { %>
+        <%= randomszam1 %>; <%= randomszam2 %>
+      <% } else { %>
+        <%= randomszam2 %>; <%= randomszam1 %>
+      <% } %>
+    </p>
+<p>Az oldalt készítette: <%= name%></p>
+  </body>
+</html>
